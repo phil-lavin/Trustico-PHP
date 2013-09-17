@@ -23,6 +23,8 @@ The following functions are available on the \Trustico\API class:
 Installation
 ------------
 
+This code requires PHP >= 5.5.
+
 Supports both Composer installation and regular file inclusion. For Composer, add the following to your composer.json:
 
 ```Javascript
