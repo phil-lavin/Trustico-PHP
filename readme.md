@@ -33,7 +33,8 @@ Supports both Composer installation and regular file inclusion. For Composer, ad
 
 For Composer, the library's classes will autoload if you use Composer's autoloader.
 
-If you don't use Composer, just include src/autoloader.php into your app.
+If you don't use Composer, just include src/autoloader.php into your app. This adds an SPL autoloader and you can call classes
+as required.
 
 Usage example
 -------------
