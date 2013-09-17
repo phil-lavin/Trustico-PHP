@@ -1,0 +1,8 @@
+{
+    "name": "phil-lavin/trustico",
+    "type": "library",
+    "license": "BSD",
+    "autoload": {
+        "psr-0": {"Trustico": "src/"}
+    }
+}
