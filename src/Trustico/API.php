@@ -80,19 +80,6 @@ class API {
 			'AdminState',
 			'AdminPostCode',
 			'AdminCountry',
-			'TechTitle',
-			'TechFirstName',
-			'TechLastName',
-			'TechOrganization',
-			'TechEmail',
-			'TechPhoneCC',
-			'TechPhoneAC',
-			'TechPhoneN',
-			'TechAddress1',
-			'TechCity',
-			'TechState',
-			'TechPostCode',
-			'TechCountry',
 			'ProductName',
 			'CSR',
 			'ValidityPeriod',
@@ -100,6 +87,24 @@ class API {
 			'ServerCount',
 			'ApproverEmail',
 		];
+
+		if (!isset($data['TechUseReseller']) || !$data['TechUseReseller']) {
+			$required += [
+				'TechTitle',
+				'TechFirstName',
+				'TechLastName',
+				'TechOrganization',
+				'TechEmail',
+				'TechPhoneCC',
+				'TechPhoneAC',
+				'TechPhoneN',
+				'TechAddress1',
+				'TechCity',
+				'TechState',
+				'TechPostCode',
+				'TechCountry',
+			];
+		}
 
 		$default = [
 			'AgreedToTerms' => 1,
@@ -133,19 +138,6 @@ class API {
 			'AdminLastName',
 			'AdminRole',
 			'AdminEmail',
-			'TechTitle',
-			'TechFirstName',
-			'TechLastName',
-			'TechOrganization',
-			'TechEmail',
-			'TechPhoneCC',
-			'TechPhoneAC',
-			'TechPhoneN',
-			'TechAddress1',
-			'TechCity',
-			'TechState',
-			'TechPostCode',
-			'TechCountry',
 			'ProductName',
 			'CSR',
 			'ValidityPeriod',
@@ -153,6 +145,24 @@ class API {
 			'ServerCount',
 			'ApproverEmail',
 		];
+
+		if (!isset($data['TechUseReseller']) || !$data['TechUseReseller']) {
+			$required += [
+				'TechTitle',
+				'TechFirstName',
+				'TechLastName',
+				'TechOrganization',
+				'TechEmail',
+				'TechPhoneCC',
+				'TechPhoneAC',
+				'TechPhoneN',
+				'TechAddress1',
+				'TechCity',
+				'TechState',
+				'TechPostCode',
+				'TechCountry',
+			];
+		}
 
 		$default = [
 			'AgreedToTerms' => 1,
