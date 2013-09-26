@@ -62,7 +62,7 @@ class API {
 
 	public function get_approver_list($domain) {
 		// Strip prefixing *. as the API doesn't handle this well
-		$domain = preg_replace('/^(\*\.)(.+)/', '\2', $domain);
+		$domain = preg_replace('/^\*\./', '', $domain);
 
 		return $this->_request('GetApproverList', ['Domain' => $domain], 'ApproverList');
 	}
